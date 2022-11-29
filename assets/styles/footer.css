@@ -5,7 +5,7 @@ footer {
 footer .footer__content {
   display: flex;
   flex-direction: column;
-  padding: 1rem;
+  padding: 1rem 1rem 2rem 1rem;
 }
 footer .footer__content img {
   height: 12rem;
@@ -27,7 +27,40 @@ footer .footer__content .footer__content__contact .footer__content__contact__pSo
 footer .footer__content .footer__content__contact .footer__content__contact__pSocial > a > img {
   height: 2rem;
 }
-footer .footer__bottom {
-  height: 1rem;
+footer .footer__content .footer__content__contact .footer__content__contact--btn {
+  margin-top: 1rem;
+}
+footer .footer__content .footer__content__contact .footer__content__contact--btn a {
+  border: 1.5px solid white;
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+footer .footer__content .footer__content__contact .footer__content__contact--btn a:hover {
   background-color: var(--backDark);
+  transition: all 0.2s ease-in-out;
+}
+footer .footer__bottom {
+  background-color: var(--backDark);
+  padding: 0.5rem;
+  text-align: center;
+  font-size: x-small;
+}
+@media (min-width: 700px) {
+  footer .footer__content {
+    flex-direction: row;
+    justify-content: center;
+    margin: 2rem auto 0 auto;
+  }
+  footer .footer__content img {
+    margin: 0 0 1rem 0;
+  }
+  footer .footer__content .menu-footer-container {
+    margin: 0 2rem;
+    font-size: x-small;
+  }
+  footer .footer__content .footer__content__contact {
+    width: 12rem;
+    margin-top: 0;
+  }
 }/*# sourceMappingURL=footer.css.map */

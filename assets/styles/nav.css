@@ -3,6 +3,9 @@ nav {
   display: flex;
   justify-content: space-between;
   padding: 0.5rem;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 nav #burger {
   display: block;
@@ -69,7 +72,7 @@ nav #burger {
     width: 100%;
   }
   nav .menu-navbar-container:nth-child(2) > ul > li {
-    margin: 0 2rem 0 0;
+    margin: 0 3rem 0 0;
     padding: 1rem 0;
     position: relative;
   }
