@@ -1,0 +1,33 @@
+footer {
+  background-color: var(--backFooter);
+  color: white;
+}
+footer .footer__content {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+footer .footer__content img {
+  height: 12rem;
+  width: auto;
+  margin: 0 auto 1rem auto;
+}
+footer .footer__content div > ul.menu li {
+  margin-top: 0.5rem;
+}
+footer .footer__content .footer__content__contact {
+  margin-top: 2rem;
+}
+footer .footer__content .footer__content__contact .footer__content__contact__pSocial {
+  display: flex;
+}
+footer .footer__content .footer__content__contact .footer__content__contact__pSocial > a {
+  margin: 1.5rem 0.5rem 0 0;
+}
+footer .footer__content .footer__content__contact .footer__content__contact__pSocial > a > img {
+  height: 2rem;
+}
+footer .footer__bottom {
+  height: 1rem;
+  background-color: var(--backDark);
+}/*# sourceMappingURL=footer.css.map */

@@ -1,0 +1,103 @@
+nav {
+  background-color: var(--backNav);
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+nav #burger {
+  display: block;
+  height: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  cursor: pointer;
+  margin-left: auto;
+  z-index: 10;
+}
+nav #burger > div {
+  width: 2rem;
+  height: 0.2rem;
+  border-radius: 0.1rem;
+  background-color: black;
+}
+nav .menu-navbar-container:first-child {
+  display: block;
+  position: absolute;
+  top: 4rem;
+  left: -200vh;
+  transition: all 0.5s ease-in-out;
+  background-color: var(--backNav);
+  width: 100%;
+  padding: 1rem;
+  /* &.menu-navbar-container--unshow {
+  } */
+}
+nav .menu-navbar-container:first-child li {
+  margin: 1rem 0;
+}
+nav .menu-navbar-container:first-child li a:hover {
+  color: white;
+}
+nav .menu-navbar-container:first-child > ul ul {
+  margin-left: 1rem;
+}
+nav .menu-navbar-container:first-child.menu-navbar-container--show {
+  display: block;
+  position: absolute;
+  left: 0;
+  transition: all 0.5s ease-in-out;
+}
+nav .menu-navbar-container:nth-child(2) {
+  display: none;
+}
+@media (min-width: 700px) {
+  nav {
+    height: 4rem;
+    align-items: center;
+  }
+  nav .menu-navbar-container:first-child,
+nav #burger {
+    display: none;
+  }
+  nav .menu-navbar-container:nth-child(2) {
+    display: block;
+    width: 100%;
+  }
+  nav .menu-navbar-container:nth-child(2) > ul {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  nav .menu-navbar-container:nth-child(2) > ul > li {
+    margin: 0 2rem 0 0;
+    padding: 1rem 0;
+    position: relative;
+  }
+  nav .menu-navbar-container:nth-child(2) > ul > li:last-child {
+    margin-right: 0;
+  }
+  nav .menu-navbar-container:nth-child(2) > ul > li > ul {
+    display: none;
+  }
+  nav .menu-navbar-container:nth-child(2) > ul > li:hover {
+    color: white;
+  }
+  nav .menu-navbar-container:nth-child(2) > ul > li:hover > ul {
+    display: block;
+    color: black;
+    position: absolute;
+    top: 100%;
+    background-color: var(--backNav);
+    width: 20rem;
+  }
+  nav .menu-navbar-container:nth-child(2) > ul > li:hover > ul > li a {
+    display: block;
+    padding: 0 0.5rem 0.5rem 0.5rem;
+  }
+  nav .menu-navbar-container:nth-child(2) > ul > li:hover > ul > li a:first-child {
+    padding-top: 0.5rem;
+  }
+  nav .menu-navbar-container:nth-child(2) > ul > li:hover > ul > li a:hover {
+    background-color: var(--backNavLight);
+  }
+}/*# sourceMappingURL=nav.css.map */

@@ -1,17 +1,26 @@
 // exemple define font-family localy
-
-/* @font-face {
-    font-family: "OpenSans-Light";
-    src: url("../font/OpenSans-Light.ttf");
-} */
+@font-face {
+    font-family: "Quicksand";
+    src: url("../fonts/Quicksand-VariableFont_wght.ttf");
+}
 
 :root {
     --mainColor: black;
+    --backNav: #b0cac3;
+    --backNavLight: #cbdbd7;
+    --backDark: #1a3340;
+    --backFooter: #456e85;
 }
 
 html {
     font-size: 15px;
-    font-family: sans-serif;
+    font-family: "Quicksand", sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 // relatif a la pagination:

@@ -1,0 +1,103 @@
+nav {
+    background-color: var(--backNav);
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem;
+    #burger {
+        display: block;
+        height: 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        cursor: pointer;
+        margin-left: auto;
+        z-index: 10;
+        >div {
+            width: 2rem;
+            height: .2rem;
+            border-radius: .1rem;
+            background-color: black;
+        }
+    }
+    .menu-navbar-container:first-child {
+        display: block;
+        position: absolute;
+        top: 4rem;
+        left: -200vh;
+        transition: all .5s ease-in-out;
+        background-color: var(--backNav);
+        width: 100%;
+        padding: 1rem;
+        li {
+            margin: 1rem 0;
+            a:hover {
+                color: white;
+            }
+        }
+        >ul {
+            ul {
+                margin-left: 1rem;
+            }
+        }
+        &.menu-navbar-container--show {
+            display: block;
+            position: absolute;
+            left: 0;
+            transition: all .5s ease-in-out;
+        }
+        /* &.menu-navbar-container--unshow {
+        } */
+    }
+    .menu-navbar-container:nth-child(2) {
+        display: none;
+    }
+    @media (min-width: 700px) {
+        height: 4rem;
+        align-items: center;
+        .menu-navbar-container:first-child,
+        #burger {
+            display: none;
+        }
+        .menu-navbar-container:nth-child(2) {
+            display: block;
+            width: 100%;
+            >ul {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                >li {
+                    margin: 0 2rem 0 0;
+                    padding: 1rem 0;
+                    position: relative;
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                    >ul {
+                        display: none;
+                    }
+                    &:hover {
+                        color: white;
+                        >ul {
+                            display: block;
+                            color: black;
+                            position: absolute;
+                            top: 100%;
+                            background-color: var(--backNav);
+                            width: 20rem;
+                            >li a {
+                                display: block;
+                                padding: 0 .5rem .5rem .5rem;
+                                &:first-child {
+                                    padding-top: .5rem;
+                                }
+                                &:hover {
+                                    background-color: var(--backNavLight);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
