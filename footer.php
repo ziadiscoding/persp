@@ -1,4 +1,4 @@
-    </div><!-- fin div.content -->
+    <!-- </div> --><!-- fin div.content -->
     <footer>
         <div class="footer__content">
             <img src="<?= get_site_icon_url(); ?>" alt="logo du site" class="footer__logo">

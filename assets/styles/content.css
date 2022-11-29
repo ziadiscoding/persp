@@ -1,3 +1,46 @@
 .content {
   flex: 1;
+  margin: 3rem auto;
+  max-width: 50rem;
+  padding: 0 1rem;
+}
+.content h2,
+.content h3,
+.content h4,
+.content h5,
+.content h6 {
+  color: var(--backFooter);
+}
+.content h2 {
+  font-size: x-large;
+  margin: 3rem 0;
+}
+.content .citation {
+  font-family: "Courgette";
+}
+
+.landingContent .thumbnail {
+  aspect-ratio: 3/2;
+  background-size: cover;
+  background-position: center bottom;
+}
+
+@media (min-width: 1000px) {
+  .landingContent {
+    display: flex;
+    flex: 1;
+    flex-direction: row-reverse;
+  }
+  .landingContent .thumbnail {
+    aspect-ratio: unset;
+    width: 50%;
+    background-size: cover;
+    background-position: center bottom;
+  }
+  .landingContent .content {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }/*# sourceMappingURL=content.css.map */
