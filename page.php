@@ -1,6 +1,8 @@
-<?php get_header(); ?> 
-<h1 class="page_title"><?= the_title(); ?></h1>
-<?= the_content(); ?>
+<?php get_header(); ?>
+<div class="content">
+    <h1 class="page_title"><?= the_title(); ?></h1>
+    <?= the_content(); ?>
+</div>
 
 <?php
 $slug = basename(get_permalink());
