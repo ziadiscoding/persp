@@ -1,15 +1,22 @@
 .content {
   flex: 1;
   margin: 3rem auto;
+  width: 100%;
   max-width: 50rem;
   padding: 0 1rem;
+}
+.content > * {
+  margin: 2rem 0;
 }
 .content h2,
 .content h3,
 .content h4,
 .content h5,
-.content h6 {
+.content h6,
+.content .page_title {
   color: var(--backFooter);
+  margin: 2rem 0;
+  font-size: large;
 }
 .content h2 {
   font-size: x-large;
@@ -18,7 +25,57 @@
 .content .citation {
   font-family: "Courgette";
 }
+.content .page_title {
+  margin: 0rem 0 4rem 0;
+  text-align: center;
+  font-size: xx-large;
+}
+.content .is-layout-flex {
+  font-size: 0.9rem;
+}
+.content .is-layout-flex > div {
+  background-color: white;
+  padding: 1rem;
+}
+.content .is-layout-flex > div > * {
+  margin: 1.5rem 0;
+}
+.content .is-layout-flex.toAction > div {
+  background-color: transparent;
+}
+.content .is-layout-flex .wp-block-button {
+  background-color: transparent !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.content .is-layout-flex .wp-block-button > a {
+  height: 100%;
+  margin: 0;
+  transition: all ease-in-out 0.25s;
+}
+.content .is-layout-flex .wp-block-button > a:hover {
+  background-color: var(--backDark) !important;
+  border-radius: 10px !important;
+  transition: all ease-in-out 0.25s;
+}
+@media (max-width: 781px) {
+  .content .is-layout-flex {
+    display: block !important;
+  }
+  .content .is-layout-flex.toAction > div {
+    padding: 0;
+  }
+  .content .is-layout-flex.toAction > div > * {
+    margin: 1.5rem 0;
+  }
+  .content .is-layout-flex .wp-block-button > a {
+    height: auto;
+  }
+}
 
+.landingContent {
+  background-color: white;
+}
 .landingContent .thumbnail {
   aspect-ratio: 3/2;
   background-size: cover;

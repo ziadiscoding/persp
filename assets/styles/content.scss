@@ -1,17 +1,21 @@
 .content {
     flex: 1;
-    .form.wpcf7-form {
-        // vise form de contact form 7
+    >* {
+        margin: 2rem 0;
     }
     margin: 3rem auto;
+    width: 100%;
     max-width: 50rem;
     padding: 0 1rem;
     h2,
     h3,
     h4,
     h5,
-    h6 {
+    h6,
+    .page_title {
         color: var(--backFooter);
+        margin: 2rem 0;
+        font-size: large;
     }
     h2 {
         font-size: x-large;
@@ -21,9 +25,63 @@
         // in landing under title
         font-family: "Courgette";
     }
+    .page_title {
+        margin: 0rem 0 4rem 0;
+        text-align: center;
+        font-size: xx-large;
+    }
+    .is-layout-flex {
+        // parent of wp columns
+        font-size: .9rem;
+        >div {
+            background-color: white;
+            padding: 1rem;
+            >* {
+                margin: 1.5rem 0;
+            }
+        }
+        &.toAction {
+            >div {
+                background-color: transparent;
+            }
+        }
+        .wp-block-button {
+            // ? back arent for btn
+            background-color: transparent !important;
+            padding: 0 !important;
+            margin: 0 !important;
+            >a {
+                height: 100%;
+                margin: 0;
+                transition: all ease-in-out .25s;
+                &:hover {
+                    background-color: var(--backDark) !important;
+                    border-radius: 10px !important;
+                    transition: all ease-in-out .25s;
+                }
+            }
+        }
+        @media (max-width: 781px) {
+            display: block !important;
+            &.toAction {
+                >div {
+                    padding: 0;
+                    >* {
+                        margin: 1.5rem 0;
+                    }
+                }
+            }
+            .wp-block-button {
+                >a {
+                    height: auto;
+                }
+            }
+        }
+    }
 }
 
 .landingContent {
+    background-color: white;
     .thumbnail {
         aspect-ratio: 3/2;
         background-size: cover;

@@ -1,0 +1,100 @@
+#wpcf7-f100-o1 {
+  background-color: var(--backForm);
+}
+#wpcf7-f100-o1 form.wpcf7-form {
+  padding: 1rem;
+  width: 100%;
+  max-width: 50rem;
+  margin: auto;
+}
+#wpcf7-f100-o1 form.wpcf7-form h2,
+#wpcf7-f100-o1 form.wpcf7-form p {
+  margin: 1rem 0;
+}
+#wpcf7-f100-o1 form.wpcf7-form h2 {
+  color: white;
+  font-size: xx-large;
+}
+#wpcf7-f100-o1 form.wpcf7-form .form_flex > .form_flex__child > * {
+  margin: 1rem 0;
+}
+#wpcf7-f100-o1 form.wpcf7-form label {
+  font-size: 0px;
+  margin: 0;
+  padding: 0;
+}
+#wpcf7-f100-o1 form.wpcf7-form label > * {
+  font-size: 1rem;
+}
+#wpcf7-f100-o1 form.wpcf7-form input[type=text],
+#wpcf7-f100-o1 form.wpcf7-form input[type=tel],
+#wpcf7-f100-o1 form.wpcf7-form input[type=email],
+#wpcf7-f100-o1 form.wpcf7-form textarea {
+  background-color: white;
+  margin-top: 0;
+  padding: 0.5rem 0.25rem;
+  max-height: 5rem;
+  width: 100%;
+  border: 1px solid var(--backFooter);
+}
+#wpcf7-f100-o1 form.wpcf7-form img {
+  height: 3rem;
+  width: auto;
+}
+#wpcf7-f100-o1 form.wpcf7-form input[type=submit] {
+  margin-left: auto;
+  border: 1px outset var(--backFooter);
+  background-color: var(--backFooter);
+  padding: 0.8rem;
+  color: white;
+  transition: all 0.25s;
+}
+#wpcf7-f100-o1 form.wpcf7-form input[type=submit]:hover {
+  background-color: var(--backDark);
+  border: 1px inset var(--backFooter);
+  transition: all 0.25s;
+}
+#wpcf7-f100-o1 form.wpcf7-form iframe {
+  width: 100%;
+  margin-top: 3rem;
+}
+#wpcf7-f100-o1 form.wpcf7-form div.form_flex__child:nth-child(1) > p:nth-child(5) {
+  background-color: white;
+  text-align: center;
+  margin-top: 2rem;
+}
+@media (min-width: 700px) {
+  #wpcf7-f100-o1 div.form_flex {
+    display: flex;
+    justify-content: space-between;
+  }
+  #wpcf7-f100-o1 div.form_flex > div.form_flex__child {
+    width: 30%;
+  }
+  #wpcf7-f100-o1 div.form_flex > div.form_flex__child:nth-child(2) p {
+    margin-top: 0;
+  }
+  #wpcf7-f100-o1 div.form_flex > div.form_flex__child:nth-child(1) {
+    /* input[type="text"], */
+  }
+  #wpcf7-f100-o1 div.form_flex > div.form_flex__child:nth-child(1) input[type=tel],
+#wpcf7-f100-o1 div.form_flex > div.form_flex__child:nth-child(1) input[type=email],
+#wpcf7-f100-o1 div.form_flex > div.form_flex__child:nth-child(1) textarea {
+    margin-top: 0;
+  }
+  #wpcf7-f100-o1 div.form_flex > div.form_flex__child:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+  }
+  #wpcf7-f100-o1 div.form_flex > div.form_flex__child:nth-child(2):first-child {
+    flex: 1;
+  }
+  #wpcf7-f100-o1 div.form_flex > div.form_flex__child:nth-child(2) textarea {
+    height: 16rem;
+    max-height: 16rem;
+  }
+  #wpcf7-f100-o1 div.form_flex > div.form_flex__child iframe {
+    margin-top: 0.3rem;
+    height: 18rem;
+  }
+}/*# sourceMappingURL=form.css.map */

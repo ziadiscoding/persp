@@ -15,6 +15,8 @@
     --backNavLight: #cbdbd7;
     --backDark: #1a3340;
     --backFooter: #456e85;
+    --contentBack: #dfe4e9;
+    --backForm: #96bbb2;
 }
 
 html {
@@ -26,6 +28,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    background-color: var(--contentBack);
 }
 
 // relatif a la pagination:

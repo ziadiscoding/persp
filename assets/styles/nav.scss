@@ -5,6 +5,7 @@ nav {
     padding: .5rem;
     position: sticky;
     top: 0;
+    z-index: 100;
     #burger {
         display: block;
         height: 3rem;
