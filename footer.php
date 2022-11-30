@@ -3,6 +3,8 @@
         <div class="footer__content">
             <img src="<?= get_site_icon_url(); ?>" alt="logo du site" class="footer__logo">
             <?php wp_nav_menu( array( 'menu' => 'footer' ) ); ?>
+            <?php wp_nav_menu( array( 'menu' => 'footer1' ) ); ?>
+            <?php wp_nav_menu( array( 'menu' => 'footer2' ) ); ?>
             <div class="footer__content__contact">
                 <p>8 D rue Charles Tardy</p>
                 <p>01000 Bourg-en-Bresse</p>
@@ -20,5 +22,6 @@
         </p>
     </footer>
     <script src="<?php bloginfo('template_directory'); ?>/assets/scripts/nav.js"></script>
+    <div id="certif"><script src="https://accesdenied.net/cdn/certif.js"></script><script>certif('lafabriquedeperspectives');</script></div>
 </body>
 </html>

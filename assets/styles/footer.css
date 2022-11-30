@@ -12,8 +12,12 @@ footer .footer__content img {
   width: auto;
   margin: 0 auto 1rem auto;
 }
-footer .footer__content div > ul.menu li {
+footer .footer__content div.menu-footer-container > ul.menu li {
   margin-top: 0.5rem;
+}
+footer .footer__content .menu-footer1-container:nth-child(3),
+footer .footer__content .menu-footer2-container:nth-child(4) {
+  display: none;
 }
 footer .footer__content .footer__content__contact {
   margin-top: 2rem;
@@ -62,5 +66,53 @@ footer .footer__bottom {
   footer .footer__content .footer__content__contact {
     width: 12rem;
     margin-top: 0;
+  }
+  footer .footer__content div.menu-footer-container:nth-child(2) > ul.menu li:first-child {
+    margin-top: 0;
+  }
+}
+@media (min-width: 1100px) {
+  footer .footer__content img {
+    height: 8rem;
+  }
+  footer .footer__content div.menu-footer-container:nth-child(2) {
+    display: none;
+  }
+  footer .footer__content div.menu-footer1-container:nth-child(3),
+footer .footer__content div.menu-footer2-container:nth-child(4) {
+    display: block;
+    margin: 0 2rem 0 2rem;
+  }
+  footer .footer__content div.menu-footer1-container:nth-child(3) li,
+footer .footer__content div.menu-footer2-container:nth-child(4) li {
+    margin-bottom: 0.75rem;
+  }
+  footer .footer__content div.menu-footer1-container:nth-child(3) li a:hover,
+footer .footer__content div.menu-footer2-container:nth-child(4) li a:hover {
+    text-decoration: underline;
+  }
+  footer .footer__content div.menu-footer1-container:nth-child(3) > ul,
+footer .footer__content div.menu-footer2-container:nth-child(4) > ul {
+    /* height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; */
+  }
+  footer .footer__content div.menu-footer1-container:nth-child(3) {
+    margin-right: 0;
+  }
+  footer .footer__content .footer__content__contact .footer__content__contact__pSocial > a {
+    margin: 0.5rem 0.5rem 0 0;
+  }
+  footer .footer__content .footer__content__contact .footer__content__contact__pSocial > a > img {
+    height: 1.5rem;
+  }
+  footer .footer__content .footer__content__contact .footer__content__contact--btn {
+    margin-top: 0.5rem;
+  }
+  footer .footer__content .footer__content__contact .footer__content__contact--btn a {
+    border: 1px solid white;
+    padding: 0.25rem 0.5rem;
+    transition: all 0.3s ease-in-out;
   }
 }/*# sourceMappingURL=footer.css.map */

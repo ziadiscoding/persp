@@ -10,8 +10,12 @@ footer {
             width: auto;
             margin: 0 auto 1rem auto;
         }
-        div>ul.menu li {
+        div.menu-footer-container>ul.menu li {
             margin-top: .5rem;
+        }
+        .menu-footer1-container:nth-child(3),
+        .menu-footer2-container:nth-child(4) {
+            display: none;
         }
         .footer__content__contact {
             margin-top: 2rem;
@@ -44,9 +48,6 @@ footer {
         padding: .5rem;
         text-align: center;
         font-size: x-small;
-        a {
-            // font-weight: bold;
-        }
     }
     @media (min-width: 700px) {
         .footer__content {
@@ -65,6 +66,62 @@ footer {
             .footer__content__contact {
                 width: 12rem;
                 margin-top: 0;
+            }
+            div.menu-footer-container:nth-child(2)>ul.menu li {
+                &:first-child {
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+    @media (min-width: 1100px) {
+        .footer__content {
+            img {
+                height: 8rem;
+            }
+            // border: 1px solid red;
+            div.menu-footer-container:nth-child(2) {
+                display: none;
+            }
+            div.menu-footer1-container:nth-child(3),
+            div.menu-footer2-container:nth-child(4) {
+                display: block;
+                margin: 0 2rem 0 2rem;
+                li {
+                    margin-bottom: .75rem;
+                    a {
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+                >ul {
+                    /* height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between; */
+                }
+            }
+            div.menu-footer1-container:nth-child(3) {
+                margin-right: 0;
+            }
+            .footer__content__contact {
+                .footer__content__contact__pSocial {
+                    >a {
+                        margin: .5rem .5rem 0 0;
+                        >img {
+                            height: 1.5rem;
+                        }
+                    }
+                }
+                .footer__content__contact--btn {
+                    margin-top: .5rem;
+                    a {
+                        border: 1px solid white;
+                        padding: .25rem .5rem;
+                        transition: all .3s ease-in-out;
+                    }
+                }
             }
         }
     }
