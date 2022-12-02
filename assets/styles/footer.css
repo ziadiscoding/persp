@@ -15,6 +15,13 @@ footer .footer__content img {
 footer .footer__content div.menu-footer-container > ul.menu li {
   margin-top: 0.5rem;
 }
+footer .footer__content div.menu-footer-container > ul.menu li > ul {
+  margin-left: 0.5rem;
+}
+footer .footer__content div.menu-footer-container > ul.menu li > ul > li::before {
+  content: ">";
+  margin-right: 0.5rem;
+}
 footer .footer__content .menu-footer1-container:nth-child(3),
 footer .footer__content .menu-footer2-container:nth-child(4) {
   display: none;
@@ -50,6 +57,9 @@ footer .footer__bottom {
   text-align: center;
   font-size: x-small;
 }
+footer .footer__bottom > li:first-child {
+  margin-top: 0.5rem;
+}
 @media (min-width: 700px) {
   footer .footer__content {
     flex-direction: row;
@@ -67,7 +77,7 @@ footer .footer__bottom {
     width: 12rem;
     margin-top: 0;
   }
-  footer .footer__content div.menu-footer-container:nth-child(2) > ul.menu li:first-child {
+  footer .footer__content div.menu-footer-container:nth-child(2) > ul.menu > li:first-child {
     margin-top: 0;
   }
 }
@@ -87,6 +97,10 @@ footer .footer__content div.menu-footer2-container:nth-child(4) {
 footer .footer__content div.menu-footer2-container:nth-child(4) li {
     margin-bottom: 0.75rem;
   }
+  footer .footer__content div.menu-footer1-container:nth-child(3) li:first-child,
+footer .footer__content div.menu-footer2-container:nth-child(4) li:first-child {
+    margin-top: 0.75rem;
+  }
   footer .footer__content div.menu-footer1-container:nth-child(3) li a:hover,
 footer .footer__content div.menu-footer2-container:nth-child(4) li a:hover {
     text-decoration: underline;
@@ -97,6 +111,15 @@ footer .footer__content div.menu-footer2-container:nth-child(4) > ul {
     display: flex;
     flex-direction: column;
     justify-content: space-between; */
+  }
+  footer .footer__content div.menu-footer1-container:nth-child(3) > ul > li > ul,
+footer .footer__content div.menu-footer2-container:nth-child(4) > ul > li > ul {
+    margin-left: 0.5rem;
+  }
+  footer .footer__content div.menu-footer1-container:nth-child(3) > ul > li > ul > li::before,
+footer .footer__content div.menu-footer2-container:nth-child(4) > ul > li > ul > li::before {
+    content: ">";
+    margin-right: 0.5rem;
   }
   footer .footer__content div.menu-footer1-container:nth-child(3) {
     margin-right: 0;

@@ -2,6 +2,13 @@
     <?php
     if (get_the_ID() === 8) {
         echo do_shortcode('[contact-form-7 id="100" title="Formulaire de contact 1"]');
+        ?>
+        <script>
+            const imgPath = '<?php bloginfo("template_directory"); ?>/assets/img/map.png';
+            console.log(imgPath);
+            document.getElementById('imgMap').src = imgPath;
+        </script>
+        <?php
     }
     ?>
     <footer>
@@ -23,7 +30,7 @@
             </div>
         </div>
         <p class="footer__bottom">
-            Création : <a href="https://www.yupanki.fr">Yupanki</a> © 2022 Tous droits réservés | <a href="<?php bloginfo('wpurl'); ?>/mentions-legales/">Mentions légale</a>
+            <a href="https://www.yupanki.fr">Création du site internet : Yupanki</a> © 2022 Tous droits réservés | <a href="<?php bloginfo('wpurl'); ?>/mentions-legales/">Mentions légales</a>
         </p>
     </footer>
     <script src="<?php bloginfo('template_directory'); ?>/assets/scripts/nav.js"></script>
