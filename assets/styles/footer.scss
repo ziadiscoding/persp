@@ -143,6 +143,11 @@ footer {
                     }
                 }
             }
+            // fake unlink in footer
+            #menu-item-164>a:hover {
+                text-decoration: none;
+                cursor: default;
+            }
         }
     }
 }

@@ -4,6 +4,8 @@
   width: 100%;
   max-width: 50rem;
   padding: 0 1rem;
+  /* SPECIFICS CLASS IN BACKOFFICE */
+  /* END OF SPECIFICS CLASS IN BACKOFFICE */
 }
 .content > * {
   margin: 2rem 0;
@@ -23,8 +25,24 @@
   font-size: x-large;
   margin: 3rem 0;
 }
+.content ul li {
+  margin-left: 1.5rem;
+  list-style-type: disc;
+  margin-top: 0.5rem;
+}
 .content .citation {
   font-family: "Courgette";
+}
+.content .justify {
+  text-align: justify;
+}
+.content .noMarginTop,
+.content .noMarginTop > div {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+.content .noMarginBottom {
+  margin-bottom: 0 !important;
 }
 .content .page_title,
 .content h1 {
@@ -34,6 +52,9 @@
 }
 .content .is-layout-flex {
   font-size: 0.9rem;
+  align-items: stretch !important;
+  /* SPECIFICS CLASS IN BACKOFFICE */
+  /* END SPECIFICS CLASS IN BACKOFFICE */
 }
 .content .is-layout-flex > div {
   background-color: white;
@@ -42,7 +63,7 @@
 .content .is-layout-flex > div > * {
   margin: 1.5rem 0;
 }
-.content .is-layout-flex.toAction > div {
+.content .is-layout-flex.toAction > * {
   background-color: transparent;
 }
 .content .is-layout-flex .wp-block-button {

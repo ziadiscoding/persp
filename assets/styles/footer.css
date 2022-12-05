@@ -138,4 +138,8 @@ footer .footer__content div.menu-footer2-container:nth-child(4) > ul > li > ul >
     padding: 0.25rem 0.5rem;
     transition: all 0.3s ease-in-out;
   }
+  footer .footer__content #menu-item-164 > a:hover {
+    text-decoration: none;
+    cursor: default;
+  }
 }/*# sourceMappingURL=footer.css.map */

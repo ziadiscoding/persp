@@ -22,10 +22,31 @@
         font-size: x-large;
         margin: 3rem 0;
     }
+    ul {
+        li {
+            margin-left: 1.5rem;
+            list-style-type: disc;
+            margin-top: .5rem;
+        }
+    }
+    /* SPECIFICS CLASS IN BACKOFFICE */
     .citation {
         // in landing under title
         font-family: "Courgette";
     }
+    .justify {
+        text-align: justify;
+    }
+    .noMarginTop,
+    .noMarginTop>div {
+        margin-top: 0 !important;
+        padding-top: 0 !important;
+    }
+    .noMarginBottom {
+        margin-bottom: 0 !important;
+        // padding-bottom: 0 !important;
+    }
+    /* END OF SPECIFICS CLASS IN BACKOFFICE */
     .page_title,
     h1 {
         margin: 0rem 0 4rem 0;
@@ -35,6 +56,7 @@
     .is-layout-flex {
         // parent of wp columns
         font-size: .9rem;
+        align-items: stretch !important;
         >div {
             background-color: white;
             padding: 1rem;
@@ -42,11 +64,14 @@
                 margin: 1.5rem 0;
             }
         }
+        /* SPECIFICS CLASS IN BACKOFFICE */
         &.toAction {
-            >div {
+            // on columns block
+            >* {
                 background-color: transparent;
             }
         }
+        /* END SPECIFICS CLASS IN BACKOFFICE */
         .wp-block-button {
             // ? back arent for btn
             background-color: transparent !important;

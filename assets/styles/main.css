@@ -12,7 +12,8 @@
   --backNavLight: #cbdbd7;
   --backDark: #1a3340;
   --backFooter: #456e85;
-  --contentBack: #dfe4e9;
+  /* --contentBack: #dfe4e9; */
+  --contentBack: #f1f4f7;
   --backForm: #96bbb2;
 }
 
