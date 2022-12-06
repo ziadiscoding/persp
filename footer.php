@@ -26,14 +26,33 @@
                     <a href="https://www.linkedin.com/in/marie-aline-gavand-geslin-5ab36055/"><img src="<?php bloginfo('template_directory'); ?>/assets/ico/Linkn_white.svg" alt="linkedin"></a>
                     <a href="#"><img src="<?php bloginfo('template_directory'); ?>/assets/ico/insta_white.svg" alt="instagram"></a>
                 </p>
-                <p class="footer__content__contact--btn"><a href="<?php bloginfo('wpurl'); ?>/">Des témoignages</a></p>
+                <p class="footer__content__contact--btn"><a id="temoignage" siteurl="<?= bloginfo('wpurl'); ?>">Des témoignages</a></p>
             </div>
         </div>
         <p class="footer__bottom">
             <a href="https://www.yupanki.fr">Création du site internet : Yupanki</a> © 2022 Tous droits réservés | <a href="<?php bloginfo('wpurl'); ?>/mentions-legales/">Mentions légales</a>
         </p>
     </footer>
+    <ul id="sliderTemoignageDisplay">
+        test
+    </ul>
+    <?php
+    $args = array(
+        'post_type' => 'temoignages',
+        'posts_per_page' => -1
+    );
+    $query = new WP_Query($args);
+    if ($query->have_posts()): 
+        echo '<ul class="sliderTemoignage" id="sliderTemoignage">';
+        while ($query->have_posts()): $query->the_post();
+                echo '<li>' . get_the_content() . '<p class="signature">' . get_the_title() . '</p></li>';
+        endwhile;
+        echo '</ul>';
+        wp_reset_postdata();
+    endif;
+    ?>
     <script src="<?php bloginfo('template_directory'); ?>/assets/scripts/nav.js"></script>
+    <script type="module" src="<?php bloginfo('template_directory'); ?>/assets/scripts/temoignage.js"></script>
     <div id="certif"><script src="https://accesdenied.net/cdn/certif.js"></script><script>certif('lafabriquedeperspectives');</script></div>
 </body>
 </html>

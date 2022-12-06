@@ -18,3 +18,5 @@ trouvable dans content.scss
 ## custom post type témoignage
 
 code emprunté à [https://wpmarmite.com/snippet/creer-custom-post-type/](https://wpmarmite.com/snippet/creer-custom-post-type/)
+
+source du code de réecriture placeholder title: https://wordpress.stackexchange.com/questions/195627/custom-post-type-title-placeholder

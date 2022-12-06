@@ -1,0 +1,25 @@
+.sliderTemoignage,
+#sliderTemoignageDisplay {
+  display: none;
+}
+.sliderTemoignage.display,
+#sliderTemoignageDisplay.display {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.6);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  box-sizing: content-box;
+  z-index: 200;
+  width: 100vw;
+  height: 100vh;
+}
+.sliderTemoignage.display > li,
+#sliderTemoignageDisplay.display > li {
+  width: 30rem;
+  max-width: 100%;
+  padding: 0 1rem 0 1rem;
+  margin: 4rem auto auto auto;
+}/*# sourceMappingURL=sliderTemoignage.css.map */

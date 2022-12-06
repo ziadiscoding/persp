@@ -47,7 +47,14 @@ function register_assets(){
           array(),
           '1.0'
     );
-
+	
+    wp_enqueue_style(
+          'sliderTemoignage-css',
+          get_template_directory_uri().'/assets/styles/sliderTemoignage.css',
+          array(),
+          '1.0'
+    );
+    
 }
 add_action('wp_enqueue_scripts', 'register_assets');
 
@@ -119,7 +126,7 @@ add_filter('enter_title_here', 'my_title_place_holder' , 20 , 2 );
     function my_title_place_holder($title , $post){
 
         if( $post->post_type == 'temoignages' ){
-            $my_title = "Signature de la sitation";
+            $my_title = "Signature du témoignage";
             return $my_title;
         }
 
