@@ -33,9 +33,14 @@
             <a href="https://www.yupanki.fr">Création du site internet : Yupanki</a> © 2022 Tous droits réservés | <a href="<?php bloginfo('wpurl'); ?>/mentions-legales/">Mentions légales</a>
         </p>
     </footer>
-    <ul id="sliderTemoignageDisplay">
-        test
-    </ul>
+    <div id="sliderTemoignageDisplay">
+        <img src="<?php bloginfo('template_directory'); ?>/assets/ico/material_close.svg" alt="" id="close">
+        <ul id="sliderTemoignageDisplay__ul"></ul>
+        <nav class="slider">
+            <img src="<?php bloginfo('template_directory'); ?>/assets/ico/material_back.svg" alt="précédent" id="before">
+            <img src="<?php bloginfo('template_directory'); ?>/assets/ico/material_forward.svg" alt="suivant" id="after">
+        </nav>
+    </div>
     <?php
     $args = array(
         'post_type' => 'temoignages',

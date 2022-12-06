@@ -4,7 +4,8 @@
 }
 .sliderTemoignage.display,
 #sliderTemoignageDisplay.display {
-  display: block;
+  display: flex;
+  flex-direction: column;
   position: fixed;
   top: 0;
   left: 0;
@@ -15,11 +16,40 @@
   z-index: 200;
   width: 100vw;
   height: 100vh;
+  max-height: 100vh;
 }
-.sliderTemoignage.display > li,
-#sliderTemoignageDisplay.display > li {
+.sliderTemoignage.display > ul,
+#sliderTemoignageDisplay.display > ul {
+  flex: 1;
+  margin: 5rem auto 1rem auto;
+  overflow-y: auto;
+  display: flex;
+  align-items: center;
+}
+.sliderTemoignage.display > ul > li,
+#sliderTemoignageDisplay.display > ul > li {
   width: 30rem;
   max-width: 100%;
-  padding: 0 1rem 0 1rem;
-  margin: 4rem auto auto auto;
+  padding: 4rem 1rem 0 1rem;
+}
+.sliderTemoignage.display img,
+#sliderTemoignageDisplay.display img {
+  cursor: pointer;
+  width: 4rem;
+  height: 4rem;
+}
+.sliderTemoignage.display > img#close,
+#sliderTemoignageDisplay.display > img#close {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.sliderTemoignage.display > nav,
+#sliderTemoignageDisplay.display > nav {
+  background-color: transparent;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto 1rem auto;
+  width: 30rem;
+  max-width: 100%;
 }/*# sourceMappingURL=sliderTemoignage.css.map */
