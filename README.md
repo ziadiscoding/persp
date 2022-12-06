@@ -8,3 +8,13 @@ git clone https://github.com/Adrien-Ray/trame_theme_wordpress.git
 ```
 ## pour la prochaine version
  - ajout de blocs de css dans un fichier content.css pour les the_content
+
+# this theme
+
+## les class css ajouter via l'editeur wordpress
+
+trouvable dans content.scss
+
+## custom post type témoignage
+
+code emprunté à [https://wpmarmite.com/snippet/creer-custom-post-type/](https://wpmarmite.com/snippet/creer-custom-post-type/)
