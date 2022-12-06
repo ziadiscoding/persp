@@ -8,7 +8,7 @@
   /* END OF SPECIFICS CLASS IN BACKOFFICE */
 }
 .content > * {
-  margin: 2rem 0;
+  margin: 1.25rem 0;
 }
 .content h1,
 .content h2,
@@ -23,7 +23,6 @@
 }
 .content h2 {
   font-size: x-large;
-  margin: 3rem 0;
 }
 .content ul li {
   margin-left: 1.5rem;
@@ -108,8 +107,16 @@
 }
 .landingContent .thumbnail {
   aspect-ratio: 3/2;
-  background-size: cover;
-  background-position: center bottom;
+  /* background-size: cover;
+  background-position: center center; */
+}
+.landingContent .thumbnail img {
+  width: 100%;
+  max-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
 }
 
 @media (min-width: 1000px) {
@@ -118,11 +125,29 @@
     flex: 1;
     flex-direction: row-reverse;
   }
+  .landingContent.landingContent--noreverse {
+    flex-direction: row;
+  }
+  .landingContent.landingContent--noreverse .thumbnail {
+    background-position: right 4rem;
+  }
   .landingContent .thumbnail {
     aspect-ratio: unset;
-    width: 50%;
-    background-size: cover;
-    background-position: center bottom;
+    width: 400px;
+    max-width: 400px;
+    /* background-size: 400px 100%;
+    background-position: left calc(4rem);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-clip: content-box; */
+  }
+  .landingContent .thumbnail img {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 4rem;
+    height: calc(100vh - 4rem);
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .landingContent .content {
     min-height: 100%;
