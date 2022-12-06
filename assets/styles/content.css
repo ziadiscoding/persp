@@ -44,9 +44,16 @@
 .content .noMarginBottom {
   margin-bottom: 0 !important;
 }
+.content #elementImgMarginRight,
+.content #elementImgMarginLeft {
+  display: none;
+}
+.content .positionRel {
+  position: relative;
+}
 .content .page_title,
 .content h1 {
-  margin: 0rem 0 4rem 0;
+  margin: 0rem 0 2.5rem 0;
   text-align: center;
   font-size: xx-large;
 }
@@ -122,5 +129,26 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+}
+@media (min-width: 1250px) {
+  .content #elementImgMarginRight,
+.content #elementImgMarginLeft {
+    display: block;
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    top: -1.5rem;
+  }
+  .content #elementImgMarginRight img,
+.content #elementImgMarginLeft img {
+    width: 100%;
+    height: auto;
+  }
+  .content #elementImgMarginRight {
+    left: calc(100% + 1rem);
+  }
+  .content #elementImgMarginLeft {
+    right: calc(100% + 1rem);
   }
 }/*# sourceMappingURL=content.css.map */
