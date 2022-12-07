@@ -23,14 +23,29 @@
   flex: 1;
   margin: 5rem auto 1rem auto;
   overflow-y: auto;
-  display: flex;
-  align-items: center;
+  display: block;
+  width: 40rem;
+  max-width: 100%;
 }
 .sliderTemoignage.display > ul > li,
 #sliderTemoignageDisplay.display > ul > li {
-  width: 30rem;
+  padding: 0 1rem 0 1rem;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+.sliderTemoignage.display > ul > li *,
+#sliderTemoignageDisplay.display > ul > li * {
   max-width: 100%;
-  padding: 4rem 1rem 0 1rem;
+  margin-bottom: 0.5rem;
+}
+.sliderTemoignage.display > ul > li.opacity,
+#sliderTemoignageDisplay.display > ul > li.opacity {
+  opacity: 1;
+  transition: opacity 0.2s;
+}
+.sliderTemoignage.display > ul > li .signature,
+#sliderTemoignageDisplay.display > ul > li .signature {
+  text-align: right;
 }
 .sliderTemoignage.display img,
 #sliderTemoignageDisplay.display img {
@@ -52,4 +67,17 @@
   margin: 0 auto 1rem auto;
   width: 30rem;
   max-width: 100%;
+}
+@media (min-width: 800px) {
+  .sliderTemoignage.display > nav,
+#sliderTemoignageDisplay.display > nav {
+    justify-content: space-between;
+    width: 50rem;
+    margin: auto;
+    position: absolute;
+    top: 40vh;
+    left: calc(50vw - 25rem);
+    z-index: -2;
+    transform-origin: center center;
+  }
 }/*# sourceMappingURL=sliderTemoignage.css.map */

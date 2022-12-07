@@ -34,5 +34,15 @@ document.getElementById('after').addEventListener('click', () => {
 function displayTemoignage() {
     // console.log('%cTEMOIGNAGE JS', 'font-size:2rem;');
     // console.log(listTemoignages);
-    document.getElementById('sliderTemoignageDisplay__ul').innerHTML = listTemoignages[count].outerHTML;
+    let step = 50;
+    if (document.querySelector('#sliderTemoignageDisplay__ul > li')) {
+        document.querySelector('#sliderTemoignageDisplay__ul > li').classList.toggle('opacity');
+        step = 200;
+    }
+    setTimeout(() => {
+        document.getElementById('sliderTemoignageDisplay__ul').innerHTML = listTemoignages[count].outerHTML;
+    }, step);
+    setTimeout(() => {
+        document.querySelector('#sliderTemoignageDisplay__ul > li').classList.toggle('opacity');
+    }, step * 2);
 }
