@@ -133,13 +133,16 @@
   }
   .landingContent .thumbnail {
     aspect-ratio: unset;
-    width: 400px;
-    max-width: 400px;
+    width: 45%;
+    max-width: 45%;
+    /* width: 400px;
+    max-width: 400px; */
     /* background-size: 400px 100%;
     background-position: left calc(4rem);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-clip: content-box; */
+    flex: 1;
   }
   .landingContent .thumbnail img {
     position: -webkit-sticky;
