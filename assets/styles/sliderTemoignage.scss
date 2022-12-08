@@ -7,7 +7,7 @@
         position: fixed;
         top: 0;
         left: 0;
-        background-color: rgba(255, 255, 255, 0.8);
+        background-color: rgb(255, 255, 255);
         backdrop-filter: blur(3px);
         box-sizing: content-box;
         z-index: 200;
@@ -57,6 +57,7 @@
             max-width: 100%;
         }
         @media (min-width: 800px) {
+            background-color: rgba(255, 255, 255, 0.8);
             >nav {
                 justify-content: space-between;
                 width: 50rem;
