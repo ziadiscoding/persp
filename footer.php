@@ -50,7 +50,7 @@
     if ($query->have_posts()): 
         echo '<ul class="sliderTemoignage" id="sliderTemoignage">';
         while ($query->have_posts()): $query->the_post();
-                echo '<li>' . get_the_content() . '<p class="signature">' . get_the_title() . '</p></li>';
+                echo '<li>' . get_the_content() . '<p class="signature">' . get_the_title() . '</p><p class="mention">Témoignages recueillis à l’issue de coachings ou de bilans de compétences. Les prénoms des personnes concernées ont été modifiés par souci de confidentialité.</p></li>';
         endwhile;
         echo '</ul>';
         wp_reset_postdata();

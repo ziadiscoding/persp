@@ -43,9 +43,18 @@
   opacity: 1;
   transition: opacity 0.2s;
 }
+.sliderTemoignage.display > ul > li p,
+#sliderTemoignageDisplay.display > ul > li p {
+  text-align: justify;
+}
 .sliderTemoignage.display > ul > li .signature,
 #sliderTemoignageDisplay.display > ul > li .signature {
   text-align: right;
+}
+.sliderTemoignage.display > ul > li .mention,
+#sliderTemoignageDisplay.display > ul > li .mention {
+  margin-top: 1.5rem;
+  font-size: small;
 }
 .sliderTemoignage.display img,
 #sliderTemoignageDisplay.display img {

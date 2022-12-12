@@ -33,8 +33,15 @@
                     opacity: 1;
                     transition: opacity .2s;
                 }
+                p {
+                    text-align: justify;
+                }
                 .signature {
                     text-align: right;
+                }
+                .mention {
+                    margin-top: 1.5rem;
+                    font-size: small;
                 }
             }
         }
