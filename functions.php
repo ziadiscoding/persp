@@ -54,6 +54,13 @@ function register_assets(){
           array(),
           '1.0'
     );
+	
+    wp_enqueue_style(
+          'imgCitation-css',
+          get_template_directory_uri().'/assets/styles/imgCitation.css',
+          array(),
+          '1.0'
+    );
     
 }
 add_action('wp_enqueue_scripts', 'register_assets');
