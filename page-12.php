@@ -1,6 +1,6 @@
 <?php
-$GLOBALS["citationOnThumb"] = 'azerty';
-$GLOBALS["citationOnThumb2"] = 'qwerty';
+$GLOBALS["citationOnThumb"] = '';
+$GLOBALS["citationOnThumb2"] = '';
 $img["first"] = get_bloginfo('url').'/wp-content/uploads/2022/12/pissenlit-scaled.jpg';
 $img["second"] = get_bloginfo('url').'/wp-content/uploads/2022/12/M-A-Gavand-5-scaled.jpg';
 $GLOBALS["flexdirection"] = '';
@@ -17,7 +17,7 @@ $GLOBALS["flexdirection2"] = 'landingContent--noreverse';
 
 
 
-<div class="landingContent <?= $GLOBALS["flexdirection"]; ?>">
+<div class="backWhite landingContent <?= $GLOBALS["flexdirection"]; ?>">
     <div class="content">
         <?= get_the_content(null, false, 506); ?>
     </div>
@@ -31,7 +31,7 @@ $GLOBALS["flexdirection2"] = 'landingContent--noreverse';
 
 
 
-<div class="landingContent <?= $GLOBALS["flexdirection2"]; ?>">
+<div class="backWhite landingContent <?= $GLOBALS["flexdirection2"]; ?>">
     <div class="content">
         <?= get_the_content(null, false, 508); ?>
     </div>

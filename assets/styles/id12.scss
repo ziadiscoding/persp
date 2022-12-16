@@ -1,0 +1,64 @@
+.backWhite {
+    background-color: white;
+    @media (min-width: 1000px) {
+        >.thumbnail {
+            width: calc(50vw + 2rem) !important;
+            max-width: calc(50vw + 2rem) !important;
+        }
+        >.content {
+            padding: 0;
+            max-width: none !important;
+            >* {
+                padding: 0 1rem;
+            }
+        }
+    }
+    >.content {
+        h3 {
+            font-size: xx-large;
+        }
+        ul {
+            li {
+                list-style-type: none !important;
+                &::before {
+                    content: "\2022";
+                    /* Add content: \2022 is the CSS Code/unicode for a bullet */
+                    color: var(--backFooter);
+                    /* Change the color */
+                    font-weight: bold;
+                    /* If you want it to be bold */
+                    display: inline-block;
+                    /* Needed to add space between the bullet and the text */
+                    width: 1em;
+                    /* Also needed for space (tweak if needed) */
+                    margin-left: -1em;
+                    /* Also needed for space (tweak if needed) */
+                }
+                strong {
+                    color: var(--backFooter);
+                }
+            }
+        }
+    }
+}
+
+.buttonsBottomPerspectives {
+    margin-bottom: 1rem !important;
+}
+
+@media (min-width: 782px) {
+    .buttonsBottomPerspectives {
+        width: calc(100% - 1rem) !important;
+        margin: auto;
+    }
+}
+
+.buttonsBottomPerspectives {
+    a {
+        transition: all ease-in-out .25s;
+        &:hover {
+            background-color: var(--backDark) !important;
+            border-radius: .5rem !important;
+        }
+    }
+}

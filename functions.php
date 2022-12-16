@@ -61,6 +61,13 @@ function register_assets(){
           array(),
           '1.0'
     );
+	
+    wp_enqueue_style(
+          'id12-css',
+          get_template_directory_uri().'/assets/styles/id12.css',
+          array(),
+          '1.0'
+    );
     
 }
 add_action('wp_enqueue_scripts', 'register_assets');
