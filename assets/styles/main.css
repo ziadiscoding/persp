@@ -2,10 +2,18 @@
   font-family: "Quicksand";
   src: url("../fonts/Quicksand-VariableFont_wght.ttf");
 }
+/* @font-face {
+    font-family: "Courgette";
+    src: url("../fonts/Courgette-Regular.ttf");
+} */
 @font-face {
   font-family: "Courgette";
-  src: url("../fonts/Courgette-Regular.ttf");
+  src: url("../fonts/Kalam-Regular.ttf");
 }
+/* @font-face {
+    font-family: "Courgette";
+    src: url("../fonts/BadScript-Regular.ttf");
+} */
 :root {
   --mainColor: black;
   --backNav: #b0cac3;
@@ -27,6 +35,9 @@ body {
   flex-direction: column;
   min-height: 100vh;
   background-color: var(--contentBack);
+}
+body figcaption {
+  font-family: "Courgette";
 }
 
 /* .pagination{

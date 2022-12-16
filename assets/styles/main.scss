@@ -4,10 +4,22 @@
     src: url("../fonts/Quicksand-VariableFont_wght.ttf");
 }
 
-@font-face {
+
+/* @font-face {
     font-family: "Courgette";
     src: url("../fonts/Courgette-Regular.ttf");
+} */
+
+@font-face {
+    font-family: "Courgette";
+    src: url("../fonts/Kalam-Regular.ttf");
 }
+
+
+/* @font-face {
+    font-family: "Courgette";
+    src: url("../fonts/BadScript-Regular.ttf");
+} */
 
 :root {
     --mainColor: black;
@@ -30,6 +42,9 @@ body {
     flex-direction: column;
     min-height: 100vh;
     background-color: var(--contentBack);
+    figcaption {
+        font-family: "Courgette";
+    }
 }
 
 // relatif a la pagination:
