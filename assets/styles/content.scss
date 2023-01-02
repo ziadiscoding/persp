@@ -1,3 +1,8 @@
+:root {
+    --burkBlue: #7eaca1;
+    --demiMarginPersonel_exeption: 1.2rem;
+}
+
 .content {
     flex: 1;
     >* {
@@ -99,6 +104,50 @@
                 background-color: transparent;
             }
         }
+        &.personel_exeption {
+            // stup exeption bottom page perso
+            width: 100%;
+            display: block;
+            // border: 1px solid red;
+            display: flex;
+            >div {
+                //width: calc(50% - var(--demiMarginPersonel_exeption));
+                width: calc(50% - 10px);
+                // border: 1px solid green;
+                height: 100% !important;
+                &:first-child {
+                    padding-left: 0;
+                    // padding-right: calc((var(--demiMarginPersonel_exeption) * 2) - 2px);
+                    padding-right: 0;
+                    padding-top: 0;
+                }
+                &:nth-child(2) {
+                    padding-right: 0 !important;
+                    padding-left: 0 !important;
+                    padding-top: 0;
+                    flex: 1;
+                    >div>a {
+                        width: 100%;
+                        padding: 1.1rem 1rem;
+                    }
+                }
+                &:nth-child(3) {
+                    display: none;
+                }
+                >div.wp-block-button {
+                    // les btn dans les columns
+                    a {
+                        b {
+                            font-size: 1.5rem;
+                        }
+                    }
+                    &:first-child {
+                        margin-bottom: calc(var(--demiMarginPersonel_exeption) * 2) !important;
+                        // margin-bottom: calc(1rem * 2) !important;
+                    }
+                }
+            }
+        }
         /* END SPECIFICS CLASS IN BACKOFFICE */
         .wp-block-button {
             // ? back arent for btn
@@ -121,6 +170,8 @@
             &.toAction {
                 >div {
                     padding: 0;
+                    width: 100%;
+                    padding-right: 0 !important;
                     >* {
                         margin: 1.5rem 0;
                     }
@@ -168,6 +219,26 @@
             }
         }
     }
+    .content {
+        ul {
+            li {
+                /* list-style-type: disc ;
+                list-style: inside ; */
+                /* 
+                &::before {
+                    content: '' !important;
+                    background-color: var(--backFooter);
+                    border-radius: 50%;
+                    width: .5rem !important;
+                    height: .5rem;
+                    margin-right: .5rem;
+                } */
+                &::before {
+                    visibility: hidden;
+                }
+            }
+        }
+    }
 }
 
 @media (min-width: 1000px) {
@@ -182,7 +253,7 @@
             }
         }
         .thumbnail {
-            aspect-ratio: unset;
+            // aspect-ratio: unset;
             width: 45%;
             max-width: 45%;
             /* width: 400px;
@@ -207,6 +278,18 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
+            /* h3 {
+                margin: 5rem 0;
+            } */
+            >* {
+                max-width: 30rem;
+                margin: auto;
+            }
+            &.content_exeptionStup {
+                >* {
+                    max-width: 40rem;
+                }
+            }
         }
     }
 }

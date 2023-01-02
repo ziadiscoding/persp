@@ -15,11 +15,17 @@
     padding: 0 1rem;
   }
 }
+.backWhite > .content {
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+  display: block;
+}
 .backWhite > .content h3 {
   font-size: xx-large;
 }
 .backWhite > .content ul li {
-  list-style-type: none !important;
+  list-style-type: none;
+  margin-bottom: 1rem;
 }
 .backWhite > .content ul li::before {
   content: "•";
@@ -38,9 +44,22 @@
 .backWhite > .content ul li strong {
   color: var(--backFooter);
 }
+.backWhite > .content ul li span {
+  display: inline-block;
+  background-color: var(--backFooter);
+  width: 0.8rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
 
 .buttonsBottomPerspectives {
   margin-bottom: 1rem !important;
+}
+
+.h3perspectivTop {
+  margin-bottom: 0 !important;
+  font-size: 1.05rem !important;
 }
 
 @media (min-width: 782px) {
@@ -55,4 +74,26 @@
 .buttonsBottomPerspectives a:hover {
   background-color: var(--backDark) !important;
   border-radius: 0.5rem !important;
+}
+
+div.backWhite:nth-child(13) > div:nth-child(1) {
+  display: block;
+}
+div.backWhite:nth-child(13) > div:nth-child(1) strong,
+div.backWhite:nth-child(13) > div:nth-child(1) h3,
+div.backWhite:nth-child(13) > div:nth-child(1) em {
+  color: var(--burkBlue);
+}
+div.backWhite:nth-child(13) > div:nth-child(1) h3 {
+  margin-top: 0;
+}
+div.backWhite:nth-child(13) > div:nth-child(1) span {
+  background-color: var(--burkBlue);
+}
+div.backWhite:nth-child(13) > div:nth-child(1) ul li {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+div.backWhite:nth-child(13) > div:nth-child(1) ul li:first-child {
+  margin-top: 0;
 }/*# sourceMappingURL=id12.css.map */

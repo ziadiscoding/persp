@@ -1,3 +1,8 @@
+:root {
+  --burkBlue: #7eaca1;
+  --demiMarginPersonel_exeption: 1.2rem;
+}
+
 .content {
   flex: 1;
   margin: 3rem auto;
@@ -94,6 +99,39 @@
 .content .is-layout-flex.toAction > * {
   background-color: transparent;
 }
+.content .is-layout-flex.personel_exeption {
+  width: 100%;
+  display: block;
+  display: flex;
+}
+.content .is-layout-flex.personel_exeption > div {
+  width: calc(50% - 10px);
+  height: 100% !important;
+}
+.content .is-layout-flex.personel_exeption > div:first-child {
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+}
+.content .is-layout-flex.personel_exeption > div:nth-child(2) {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+  padding-top: 0;
+  flex: 1;
+}
+.content .is-layout-flex.personel_exeption > div:nth-child(2) > div > a {
+  width: 100%;
+  padding: 1.1rem 1rem;
+}
+.content .is-layout-flex.personel_exeption > div:nth-child(3) {
+  display: none;
+}
+.content .is-layout-flex.personel_exeption > div > div.wp-block-button a b {
+  font-size: 1.5rem;
+}
+.content .is-layout-flex.personel_exeption > div > div.wp-block-button:first-child {
+  margin-bottom: calc(var(--demiMarginPersonel_exeption) * 2) !important;
+}
 .content .is-layout-flex .wp-block-button {
   background-color: transparent !important;
   padding: 0 !important;
@@ -115,6 +153,8 @@
   }
   .content .is-layout-flex.toAction > div {
     padding: 0;
+    width: 100%;
+    padding-right: 0 !important;
   }
   .content .is-layout-flex.toAction > div > * {
     margin: 1.5rem 0;
@@ -156,6 +196,22 @@
   font-weight: bold;
   text-shadow: 0 0 7px white, 0 0 7px white, 0 0 7px white;
 }
+.landingContent .content ul li {
+  /* list-style-type: disc ;
+  list-style: inside ; */
+  /* 
+  &::before {
+      content: '' !important;
+      background-color: var(--backFooter);
+      border-radius: 50%;
+      width: .5rem !important;
+      height: .5rem;
+      margin-right: .5rem;
+  } */
+}
+.landingContent .content ul li::before {
+  visibility: hidden;
+}
 
 @media (min-width: 1000px) {
   .landingContent {
@@ -170,7 +226,6 @@
     background-position: right 4rem;
   }
   .landingContent .thumbnail {
-    aspect-ratio: unset;
     width: 45%;
     max-width: 45%;
     /* width: 400px;
@@ -197,6 +252,16 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    /* h3 {
+        margin: 5rem 0;
+    } */
+  }
+  .landingContent .content > * {
+    max-width: 30rem;
+    margin: auto;
+  }
+  .landingContent .content.content_exeptionStup > * {
+    max-width: 40rem;
   }
 }
 @media (min-width: 1250px) {

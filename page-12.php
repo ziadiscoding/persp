@@ -47,5 +47,5 @@ $GLOBALS["flexdirection2"] = 'landingContent--noreverse';
 <div class="content">
     <?= get_the_content(null, false, 504); ?>
 </div>
-
+<script src="<?php bloginfo('stylesheet_directory'); ?>/assets/scripts/puces.js"></script>
 <?php get_footer(); ?>
