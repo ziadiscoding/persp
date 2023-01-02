@@ -65,7 +65,7 @@
   background-color: white;
   border: 2px solid var(--backFooter);
   padding: 1rem;
-  margin: 0 !important;
+  margin: 0 auto !important;
 }
 @media (max-width: 782px) {
   .content .noDisplayMobil {
