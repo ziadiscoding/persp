@@ -1,6 +1,6 @@
 :root {
   --burkBlue: #7eaca1;
-  --demiMarginPersonel_exeption: 1.2rem;
+  --demiMarginPersonel_exeption: .8rem;
 }
 
 .content {
@@ -67,16 +67,6 @@
   padding: 1rem;
   margin: 0 auto !important;
 }
-@media (max-width: 782px) {
-  .content .noDisplayMobil {
-    display: none !important;
-  }
-}
-@media (min-width: 783px) {
-  .content .noDisplayDesktop {
-    display: none !important;
-  }
-}
 .content .page_title,
 .content h1 {
   margin: 0rem 0 2.5rem 0;
@@ -126,8 +116,16 @@
 .content .is-layout-flex.personel_exeption > div:nth-child(3) {
   display: none;
 }
+.content .is-layout-flex.personel_exeption > div > div.wp-block-button:first-child a {
+  background-color: #7eaca1 !important;
+  transition: all ease-in-out 0.25s;
+}
+.content .is-layout-flex.personel_exeption > div > div.wp-block-button:first-child a:hover {
+  background-color: #537970 !important;
+}
 .content .is-layout-flex.personel_exeption > div > div.wp-block-button a b {
   font-size: 1.5rem;
+  font-weight: 400;
 }
 .content .is-layout-flex.personel_exeption > div > div.wp-block-button:first-child {
   margin-bottom: calc(var(--demiMarginPersonel_exeption) * 2) !important;
@@ -161,6 +159,12 @@
   }
   .content .is-layout-flex .wp-block-button > a {
     height: auto;
+  }
+}
+@media (max-width: 782px) {
+  .content .personel_exeption {
+    display: flex !important;
+    flex-direction: column-reverse;
   }
 }
 

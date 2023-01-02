@@ -1,6 +1,6 @@
 :root {
     --burkBlue: #7eaca1;
-    --demiMarginPersonel_exeption: 1.2rem;
+    --demiMarginPersonel_exeption: .8rem;
 }
 
 .content {
@@ -69,16 +69,6 @@
         padding: 1rem;
         margin: 0 auto !important;
     }
-    .noDisplayMobil {
-        @media (max-width: 782px) {
-            display: none !important;
-        }
-    }
-    .noDisplayDesktop {
-        @media (min-width: 783px) {
-            display: none !important;
-        }
-    }
     /* END OF SPECIFICS CLASS IN BACKOFFICE */
     .page_title,
     h1 {
@@ -136,9 +126,17 @@
                 }
                 >div.wp-block-button {
                     // les btn dans les columns
+                    &:first-child a {
+                        background-color: #7eaca1 !important;
+                        transition: all ease-in-out .25s;
+                        &:hover {
+                            background-color: #537970 !important;
+                        }
+                    }
                     a {
                         b {
                             font-size: 1.5rem;
+                            font-weight: 400;
                         }
                     }
                     &:first-child {
@@ -182,6 +180,14 @@
                     height: auto;
                 }
             }
+        }
+    }
+    .personel_exeption {
+        @media (max-width: 782px) {
+            // display: none !important;
+            display: flex !important;
+            flex-direction: column-reverse;
+            .noDisplayMobil {}
         }
     }
 }
