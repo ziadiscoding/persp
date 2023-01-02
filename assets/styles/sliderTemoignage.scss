@@ -35,6 +35,9 @@
                 }
                 p {
                     text-align: justify;
+                    &:first-child {
+                        font-style: italic;
+                    }
                 }
                 .signature {
                     text-align: right;

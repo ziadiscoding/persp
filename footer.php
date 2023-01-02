@@ -24,7 +24,7 @@
                 <p class="footer__content__contact__pSocial">
                     <a href="https://www.facebook.com/Lafabriquedeperspectives"><img src="<?php bloginfo('template_directory'); ?>/assets/ico/FB_white.svg" alt="facebook"></a>
                     <a href="https://www.linkedin.com/in/marie-aline-gavand-geslin-5ab36055/"><img src="<?php bloginfo('template_directory'); ?>/assets/ico/Linkn_white.svg" alt="linkedin"></a>
-                    <a href="#"><img src="<?php bloginfo('template_directory'); ?>/assets/ico/insta_white.svg" alt="instagram"></a>
+                    <a href="https://www.instagram.com/lafabriquedeperspectives/"><img src="<?php bloginfo('template_directory'); ?>/assets/ico/insta_white.svg" alt="instagram"></a>
                 </p>
                 <p class="footer__content__contact--btn"><a id="temoignage" siteurl="<?= bloginfo('wpurl'); ?>">Des témoignages</a></p>
             </div>
@@ -44,7 +44,10 @@
     <?php
     $args = array(
         'post_type' => 'temoignages',
-        'posts_per_page' => -1
+        'posts_per_page' => -1,
+        'orderby'   => array(
+          'date' =>'ASC'
+        )
     );
     $query = new WP_Query($args);
     if ($query->have_posts()): 

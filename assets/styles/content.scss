@@ -68,6 +68,10 @@
         border: 2px solid var(--backFooter);
         padding: 1rem;
         margin: 0 auto !important;
+        h3 {
+            font-size: 1.4rem;
+            margin: 1.5rem 0;
+        }
     }
     /* END OF SPECIFICS CLASS IN BACKOFFICE */
     .page_title,
@@ -190,6 +194,16 @@
             .noDisplayMobil {}
         }
     }
+    .exeption_perspective_btn {
+        @media (min-width: 781px) {
+            display: flex;
+            // idiot exeption btn in columns class .exeption_perspective_btn
+            justify-content: center;
+            >* {
+                max-width: 17rem;
+            }
+        }
+    }
 }
 
 .landingContent {
@@ -307,8 +321,8 @@
         #elementImgMarginRightId50,
         #elementImgMarginLeftId50 {
             display: block;
-            width: 200px;
-            height: 300px;
+            width: 150px;
+            height: 230px;
             position: absolute;
             top: -1.5rem;
             img {

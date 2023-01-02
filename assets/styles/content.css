@@ -67,6 +67,10 @@
   padding: 1rem;
   margin: 0 auto !important;
 }
+.content .tarots h3 {
+  font-size: 1.4rem;
+  margin: 1.5rem 0;
+}
 .content .page_title,
 .content h1 {
   margin: 0rem 0 2.5rem 0;
@@ -165,6 +169,15 @@
   .content .personel_exeption {
     display: flex !important;
     flex-direction: column-reverse;
+  }
+}
+@media (min-width: 781px) {
+  .content .exeption_perspective_btn {
+    display: flex;
+    justify-content: center;
+  }
+  .content .exeption_perspective_btn > * {
+    max-width: 17rem;
   }
 }
 
@@ -274,8 +287,8 @@
 .content #elementImgMarginRightId50,
 .content #elementImgMarginLeftId50 {
     display: block;
-    width: 200px;
-    height: 300px;
+    width: 150px;
+    height: 230px;
     position: absolute;
     top: -1.5rem;
   }

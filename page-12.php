@@ -8,7 +8,7 @@ $GLOBALS["flexdirection2"] = 'landingContent--noreverse';
 ?>
 <?php get_header(); ?> 
 
-<div class="content">
+<div class="content" style="margin-top:2rem; margin-bottom:2rem;">
     <?= get_the_content(null, false, 500); ?>
 </div>
 

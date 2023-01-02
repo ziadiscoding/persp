@@ -47,6 +47,10 @@
 #sliderTemoignageDisplay.display > ul > li p {
   text-align: justify;
 }
+.sliderTemoignage.display > ul > li p:first-child,
+#sliderTemoignageDisplay.display > ul > li p:first-child {
+  font-style: italic;
+}
 .sliderTemoignage.display > ul > li .signature,
 #sliderTemoignageDisplay.display > ul > li .signature {
   text-align: right;
