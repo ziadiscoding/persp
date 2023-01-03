@@ -1,7 +1,7 @@
 <?php
 $GLOBALS["citationOnThumb"] = '';
 $GLOBALS["citationOnThumb2"] = '';
-$img["first"] = get_bloginfo('url').'/wp-content/uploads/2022/12/pissenlit-scaled.jpg';
+$img["first"] = get_bloginfo('url').'/wp-content/uploads/2023/01/Fabrique-Perspectives-Pro.jpg';
 $img["second"] = get_bloginfo('url').'/wp-content/uploads/2022/12/M-A-Gavand-5-scaled.jpg';
 $GLOBALS["flexdirection"] = '';
 $GLOBALS["flexdirection2"] = 'landingContent--noreverse';
