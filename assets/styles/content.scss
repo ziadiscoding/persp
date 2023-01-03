@@ -16,6 +16,10 @@
     width: 100%;
     max-width: 50rem;
     padding: 0 1rem;
+    &.content--noTopMargin {
+        // idiot exeption or page id 48
+        margin-top: 0;
+    }
     h1,
     h2,
     h3,

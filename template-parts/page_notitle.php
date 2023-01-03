@@ -1,5 +1,12 @@
-<?php get_header(); ?>
-<div class="content">
+<?php get_header();
+$addContentClass = '';
+global $post;
+if( $post->ID == 48) { 
+    $addContentClass = ' content--noTopMargin';
+ }
+ ?>
+
+<div class="content<?= $addContentClass; ?>">
     <?= the_content(); ?>
 </div>
 
