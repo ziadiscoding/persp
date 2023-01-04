@@ -18,7 +18,7 @@ $GLOBALS["flexdirection2"] = 'landingContent--noreverse';
 
 
 <div class="backWhite landingContent <?= $GLOBALS["flexdirection"]; ?>">
-    <div class="content">
+    <div class="content" id="stpd_exep">
         <?= get_the_content(null, false, 506); ?>
     </div>
     <div class="thumbnail">

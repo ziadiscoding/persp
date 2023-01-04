@@ -80,18 +80,19 @@
     }
 }
 
-div.backWhite:nth-child(13)>div:nth-child(1) {
+#stpd_exep {
+    // body > div:nth-child(11) => selector for chrome
     display: block;
     strong,
     h3,
     em {
-        color: var(--burkBlue);
+        color: var(--burkBlue) !important;
     }
     h3 {
         margin-top: 0;
     }
     span {
-        background-color: var(--burkBlue);
+        background-color: var(--burkBlue) !important;
     }
     ul {
         li {
