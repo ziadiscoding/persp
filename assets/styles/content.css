@@ -202,19 +202,20 @@
   max-height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: 50% 50%;
-     object-position: 50% 50%;
+  -o-object-position: 50% 100%;
+     object-position: 50% 100%;
 }
 .landingContent .thumbnail figure figcaption {
   display: inline-block;
   position: absolute;
-  top: calc(50% - 1rem);
+  top: 2rem;
   left: 0;
   width: 100%;
   text-align: center;
   vertical-align: center;
   font-weight: bold;
-  text-shadow: 0 0 7px white, 0 0 7px white, 0 0 7px white;
+  color: var(--backFooter);
+  font-size: small;
 }
 .landingContent .content ul li {
   /* list-style-type: disc ;
@@ -294,6 +295,12 @@
     height: 230px;
     position: absolute;
     top: -1.5rem;
+  }
+  .content #elementImgMarginRight.topPlus,
+.content #elementImgMarginLeft.topPlus,
+.content #elementImgMarginRightId50.topPlus,
+.content #elementImgMarginLeftId50.topPlus {
+    top: 100vh;
   }
   .content #elementImgMarginRight img,
 .content #elementImgMarginLeft img,
