@@ -184,6 +184,11 @@
   }
 }
 
+body.home .landingContent .thumbnail figure img {
+  -o-object-position: 50% 100%;
+     object-position: 50% 100%;
+}
+
 .landingContent .thumbnail {
   aspect-ratio: 3/2;
   /* background-size: cover;
@@ -202,8 +207,8 @@
   max-height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: 50% 100%;
-     object-position: 50% 100%;
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
 }
 .landingContent .thumbnail figure figcaption {
   display: inline-block;

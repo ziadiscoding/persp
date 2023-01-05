@@ -1,8 +1,10 @@
 <?php
 $GLOBALS["citationOnThumb"] = '';
 $GLOBALS["citationOnThumb2"] = '';
-$img["first"] = get_bloginfo('url').'/wp-content/uploads/2023/01/fabrique02.jpg';
-$img["second"] = get_bloginfo('url').'/wp-content/uploads/2023/01/fabrique01.jpg';
+/* $img["first"] = get_bloginfo('url').'/wp-content/uploads/2023/01/fabrique02.jpg';
+$img["second"] = get_bloginfo('url').'/wp-content/uploads/2023/01/fabrique01.jpg'; */
+$img["first"] = get_bloginfo('url').'/wp-content/uploads/2023/01/Fabrique-VosPers-Perso-960x650px.jpg';
+$img["second"] = get_bloginfo('url').'/wp-content/uploads/2023/01/Fabrique-VosPers-Pro-960x650px.jpg';
 $GLOBALS["flexdirection"] = '';
 $GLOBALS["flexdirection2"] = 'landingContent--noreverse';
 ?>
