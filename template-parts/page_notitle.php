@@ -1,7 +1,7 @@
 <?php get_header();
 $addContentClass = '';
 global $post;
-if( $post->ID == 48) { 
+if( $post->ID == 48 || $post->ID == 230 ) { 
     $addContentClass = ' content--noTopMargin';
  }
  ?>
