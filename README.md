@@ -1,3 +1,6 @@
+# WARNING!
+**pre-prod site is en avance (bdd)**
+
 # trame_theme_wordpress
 
 base de theme "blank", pour démarer un theme de zéro, mais pas trop quand même!
