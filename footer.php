@@ -13,7 +13,7 @@
     ?>
     <footer>
         <div class="footer__content">
-            <img src="<?= get_site_icon_url(); ?>" alt="logo du site" class="footer__logo">
+            <img src="<?= bloginfo('wpurl'); ?>/wp-content/uploads/2022/11/Logo-300x243.png" alt="logo du site" class="footer__logo">
             <?php wp_nav_menu( array( 'menu' => 'footer' ) ); ?>
             <?php wp_nav_menu( array( 'menu' => 'footer1' ) ); ?>
             <?php wp_nav_menu( array( 'menu' => 'footer2' ) ); ?>
