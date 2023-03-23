@@ -30,7 +30,7 @@
             </div>
         </div>
         <p class="footer__bottom">
-            <a href="https://www.yupanki.fr">Création du site internet : Yupanki</a> © 2022 Tous droits réservés | <a href="<?php bloginfo('wpurl'); ?>/mentions-legales/">Mentions légales</a> | <a href="<?php bloginfo('wpurl'); ?>/politique-de-confidentialite/">Politique de confidentialité</a>
+            <a href="https://www.yupanki.fr" class="menuCreate">Création du site internet : Yupanki</a> © 2022 Tous droits réservés | <a href="<?php bloginfo('wpurl'); ?>/mentions-legales/">Mentions légales</a> | <a href="<?php bloginfo('wpurl'); ?>/politique-de-confidentialite/">Politique de confidentialité</a>
         </p>
     </footer>
     <div id="sliderTemoignageDisplay">
