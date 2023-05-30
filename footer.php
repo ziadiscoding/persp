@@ -46,7 +46,7 @@
         'post_type' => 'temoignages',
         'posts_per_page' => -1,
         'orderby'   => array(
-          'date' =>'ASC'
+          'date' =>'DESC'
         )
     );
     $query = new WP_Query($args);

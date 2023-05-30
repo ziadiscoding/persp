@@ -81,8 +81,8 @@
     /* input[type="text"], */
   }
   #wpcf7-f100-o1 div.form_flex > div.form_flex__child:nth-child(1) input[type=tel],
-#wpcf7-f100-o1 div.form_flex > div.form_flex__child:nth-child(1) input[type=email],
-#wpcf7-f100-o1 div.form_flex > div.form_flex__child:nth-child(1) textarea {
+  #wpcf7-f100-o1 div.form_flex > div.form_flex__child:nth-child(1) input[type=email],
+  #wpcf7-f100-o1 div.form_flex > div.form_flex__child:nth-child(1) textarea {
     margin-top: 0;
   }
   #wpcf7-f100-o1 div.form_flex > div.form_flex__child:nth-child(1) p {

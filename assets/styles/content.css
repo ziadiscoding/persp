@@ -264,7 +264,6 @@ body.home .landingContent .thumbnail figure img {
     flex: 1;
   }
   .landingContent .thumbnail figure {
-    position: -webkit-sticky;
     position: sticky;
     top: 4rem;
     height: calc(100vh - 4rem);
@@ -292,9 +291,9 @@ body.home .landingContent .thumbnail figure img {
 }
 @media (min-width: 1250px) {
   .content #elementImgMarginRight,
-.content #elementImgMarginLeft,
-.content #elementImgMarginRightId50,
-.content #elementImgMarginLeftId50 {
+  .content #elementImgMarginLeft,
+  .content #elementImgMarginRightId50,
+  .content #elementImgMarginLeftId50 {
     display: block;
     width: 150px;
     height: 230px;
@@ -302,15 +301,15 @@ body.home .landingContent .thumbnail figure img {
     top: -1.5rem;
   }
   .content #elementImgMarginRight.topPlus,
-.content #elementImgMarginLeft.topPlus,
-.content #elementImgMarginRightId50.topPlus,
-.content #elementImgMarginLeftId50.topPlus {
+  .content #elementImgMarginLeft.topPlus,
+  .content #elementImgMarginRightId50.topPlus,
+  .content #elementImgMarginLeftId50.topPlus {
     top: 100vh;
   }
   .content #elementImgMarginRight img,
-.content #elementImgMarginLeft img,
-.content #elementImgMarginRightId50 img,
-.content #elementImgMarginLeftId50 img {
+  .content #elementImgMarginLeft img,
+  .content #elementImgMarginRightId50 img,
+  .content #elementImgMarginLeftId50 img {
     width: 100%;
     height: auto;
   }
