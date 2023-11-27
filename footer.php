@@ -25,6 +25,7 @@
                     <a target="_blank" href="https://www.facebook.com/Lafabriquedeperspectives"><img src="<?php bloginfo('template_directory'); ?>/assets/ico/FB_white.svg" alt="facebook"></a>
                     <a target="_blank" href="https://www.linkedin.com/in/marie-aline-gavand-geslin-5ab36055/"><img src="<?php bloginfo('template_directory'); ?>/assets/ico/Linkn_white.svg" alt="linkedin"></a>
                     <a target="_blank" href="https://www.instagram.com/lafabriquedeperspectives/"><img src="<?php bloginfo('template_directory'); ?>/assets/ico/insta_white.svg" alt="instagram"></a>
+                    <a target="_blank" href="https://www.google.com/search?q=la+fabrique+des+perspectives&rlz=1C1VDKB_frFR1024FR1024&oq=la+&gs_lcrp=EgZjaHJvbWUqCAgAEEUYJxg7MggIABBFGCcYOzIGCAEQRRg8MgYIAhBFGDwyBggDEEUYPTIGCAQQRRg9MgYIBRBFGDwyBggGEEUYQTIGCAcQRRhB0gEIMTQyNWowajeoAgCwAgA&sourceid=chrome&ie=UTF-8#lrd=0x47e671bbfba66f01:0xa11bfbae3c5c457e,1,,,,"><img src="<?php bloginfo('template_directory'); ?>/assets/ico/google_white.svg" alt="avis-google"></a>
                 </p>
                 <p class="footer__content__contact--btn"><a id="temoignage" siteurl="<?= bloginfo('wpurl'); ?>">Des témoignages</a></p>
             </div>
